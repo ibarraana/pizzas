@@ -37,20 +37,16 @@ function App() {
       <Header />
 
       {!pizzaSeleccionada ? (
-
         <Catalogo
           pizzas={pizzas.pizzas}
           seleccionarPizza={seleccionarPizza}
-        />
-
+      />
       ) : (
-
         <DetallePizza
-          pizza={pizzaSeleccionada}
-          opciones={tamanos.categorias}
+          pizzaActual={pizzaSeleccionada}
+          categorias={tamanos.categorias}
           seleccionarTamano={seleccionarTamano}
         />
-
       )}
 
       {tamanoSeleccionado && (

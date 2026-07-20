@@ -11,6 +11,10 @@ function DetallePizza({ pizzaActual, categorias, seleccionarTamano }) {
         (categoria) => categoria.pizzaId === pizzaActual.id
     );
 
+    if (!categoriaPizza) {
+        return <p>No hay tamaños disponibles para esta pizza.</p>;
+    }
+
     return (
         <div className="text-center">
 
