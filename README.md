@@ -1,16 +1,38 @@
-# React + Vite
+Contexto: Una pizzería local necesita una SPA (Single Page Application) para que sus
+clientes puedan autogestionar sus pedidos. El sistema debe mostrar un catálogo de
+variedades de pizza (con un precio base correspondiente al tamaño personal) y, al
+seleccionar una, desplegar los tamaños y tipos de masa disponibles, calculando el precio
+final con su respectivo porcentaje de incremento.
+1. Requerimientos de Estructura
+• Header: Un logo de la pizzería y el título "Armá tu Pedido".
+• Cuerpo (Main) - Flujo de 2 pasos:
+◦ Paso 1 (Catálogo): Una grilla con las variedades de pizza disponibles
+mostrando imagen, nombre, descripción de ingredientes y el precio base.
+◦ Paso 2 (Detalle y Tamaños): Al elegir una pizza, la grilla debe ocultarse. Se
+debe mostrar a pantalla completa la pizza elegida y las opciones de tamaño/
+masa disponibles para esa variedad.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+• Footer: Texto centrado: "© 2026 Pizzería La Masa - Instituto Superior Santa Rosa
+de Calamuchita".
+2. Interacción y Lógica de Negocio
+• Gestión de Estados (useState): * Un estado para la pizza seleccionada
+(pizzaSeleccionada).
+◦ Un estado para la opción de tamaño seleccionada (tamanoSeleccionado).
+• Cruce de Datos: Al seleccionar una pizza, se debe utilizar su id para buscar en el
+segundo JSON (tamanos.json) el array de opciones correspondientes a esa
+variedad.
+• Renderizado de Tamaños: Mostrar las opciones como botones o tarjetas. La
+primera opción siempre será el tamaño "Personal" (0% de incremento sobre el
+precio base).
+• Lógica Matemática (Punto Crítico): Al seleccionar un tamaño, el sistema debe
+calcular el precio final en tiempo real basándose en el porcentaje de incremento.
+◦ Fórmula: Precio Final = Precio Base + (Precio Base * incremento / 100).
 
-Currently, two official plugins are available:
+◦ Ejemplo: Si el precio base de la pizza es $6000 y se elige "Familiar"
+(incremento del 100%), el total a pagar mostrado debe ser $12000.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+• Renderizado Condicional:
+◦ El panel de "Resumen del Pedido" en la parte inferior solo debe aparecer si
+el usuario ya seleccionó un tamaño.
+◦ En el resumen debe decir: "Pedido: Pizza [Nombre] - Tamaño: [Nombre del
+Tamaño]. Total a pagar: $[Precio Calculado]". Debe incluir un botón simulado
