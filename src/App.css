@@ -1,0 +1,25 @@
+.header{
+
+    background-color:#d32f2f;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+.logo{
+
+    width:100px;
+
+    height:100px;
+
+}

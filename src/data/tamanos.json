@@ -1,0 +1,91 @@
+{
+  "categorias": [
+    {
+      "pizzaId": 1,
+      "opciones": [
+        {
+          "id": "op1",
+          "nombre": "Personal",
+          "masa": "Tradicional",
+          "incremento": 0
+        },
+        {
+          "id": "op2",
+          "nombre": "Mediana",
+          "masa": "Tradicional",
+          "incremento": 40
+        },
+        {
+          "id": "op3",
+          "nombre": "Grande",
+          "masa": "A la Piedra",
+          "incremento": 70
+        },
+        {
+          "id": "op4",
+          "nombre": "Familiar",
+          "masa": "Masa Madre",
+          "incremento": 100
+        }
+      ]
+    },
+    {
+      "pizzaId": 2,
+      "opciones": [
+        {
+          "id": "op5",
+          "nombre": "Personal",
+          "masa": "Tradicional",
+          "incremento": 0
+        },
+        {
+          "id": "op6",
+          "nombre": "Mediana",
+          "masa": "Tradicional",
+          "incremento": 40
+        },
+        {
+          "id": "op7",
+          "nombre": "Grande",
+          "masa": "A la Piedra",
+          "incremento": 70
+        },
+        {
+          "id": "op8",
+          "nombre": "Familiar",
+          "masa": "Masa Madre",
+          "incremento": 100
+        }
+      ]
+    },
+    {
+      "pizzaId": 3,
+      "opciones": [
+        {
+          "id": "op9",
+          "nombre": "Personal",
+          "masa": "Tradicional",
+          "incremento": 0
+        },
+        {
+          "id": "op10",
+          "nombre": "Mediana",
+          "masa": "Tradicional",
+          "incremento": 40
+        },
+        {
+          "id": "op11",
+          "nombre": "Grande",
+          "masa": "A la Piedra",
+          "incremento": 70
+        },
+        {
+          "id": "op12",
+          "nombre": "Familiar",
+          "masa": "Masa Madre",
+          "incremento": 100
+        }
+      ]
+    }
+  ]
+}

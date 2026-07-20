@@ -1,0 +1,25 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "nombre": "Margarita Clásica",
+      "ingredientes": "Salsa de tomate artesanal, mozzarella de búfala, albahaca fresca y aceite de oliva.",
+      "precioBase": 6000,
+      "imagen": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&q=80"
+    },
+    {
+      "id": 2,
+      "nombre": "Pepperoni New York",
+      "ingredientes": "Salsa de tomate, doble mozzarella y rodajas de pepperoni levemente picante.",
+      "precioBase": 7500,
+      "imagen": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500&q=80"
+    },
+    {
+      "id": 3,
+      "nombre": "Cuatro Quesos Premium",
+      "ingredientes": "Mozzarella, provolone, roquefort y parmesano gratinado.",
+      "precioBase": 8200,
+      "imagen": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80"
+    }
+  ]
+}
